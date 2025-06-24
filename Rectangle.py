@@ -6,6 +6,8 @@ class Rectangle(Shape):
         self.side2 = side2
     def show_area(self):
         return self.side1 * self.side2
+    def get_perimeter(self):
+        return (self.side1 + self.side2) * 2
 if __name__ == '__main__':
 
     d = Rectangle(12,3)

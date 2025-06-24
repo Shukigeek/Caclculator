@@ -14,6 +14,8 @@ class Triangle(Shape):
         s = (self.a + self.b + self.c) / 2
         area = math.sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
         return area
+    def get_perimeter(self):
+        return self.a + self.b + self.c
 if __name__ == '__main__':
     a = Triangle(1,2,3)
     print(a)
