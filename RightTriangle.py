@@ -12,6 +12,25 @@ class RightTriangle(Shape):
         c = math.sqrt((self.base**2)+(self.height**2))
         return self.height + self.base + c
 
+    def ascii_art(self):
+        hypotenuse = round(math.sqrt(self.base ** 2 + self.height ** 2), 2)
+        area = round(self.show_area(), 2)
+        perimeter = round(self.get_perimeter(), 2)
+
+        return f"""
+            |\\
+        {self.height:<3} | \\  
+            |  \\
+            |   \\ 
+            |    \\  {hypotenuse}
+            |     \\
+            |______\\
+               {self.base}
+
+    Area: {area}
+    Perimeter: {perimeter}
+    """
+
 if __name__ == '__main__':
-    a = RightTriangle(2,9)
+    a = RightTriangle(2,900)
     print(a)

@@ -10,8 +10,11 @@ class Shape(ABC):
     @abstractmethod
     def get_perimeter(self):
         pass
+    @abstractmethod
+    def ascii_art(self):
+        pass
     def __str__(self):
-        return f"{self.name} with the area of: {self.show_area():.2f} and a perimeter of: {self.get_perimeter():.2f}"
+        return f"{self.name} with the area of: {self.show_area():.2f} and a perimeter of: {self.get_perimeter():.2f}\n{self.ascii_art()}"
 
 
 
