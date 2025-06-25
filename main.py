@@ -74,6 +74,7 @@ def main():
         if shape:
             print(shape)
 
+
     elif choice in ["7", "8", "9"]:
         print("enter first shape:")
         menu = ("Choose shape number: \n1: square\n2: rectangle\n3: right triangle\n"
